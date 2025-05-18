@@ -12,7 +12,7 @@
 
 **5. 4 activity** – 7 activity van, ebből 4 (MainActivity, RegistationActivity, HomePageActivity, TableChoosingActivity)
 
-**6. Beviteli mezők beviteli típusa megfelelő** – Minden helyen megfelelő pl (MainActivity.xml 44. sor vagy 57. sor)
+**6. Beviteli mezők beviteli típusa megfelelő** – Minden helyen megfelelő pl (activity_main.xml 44. sor vagy 57. sor)
 
 **7. ConstraintLayout és még egy másik layout típus használata** – ConstraintLayout-ot, LinearLayout-ot, FrameLayout-ot is használok
 
