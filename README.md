@@ -31,3 +31,5 @@
 **14. CRUD műveletek**– a profilban lehet változtatni a felhasználóneve, lehet törölni a fiókot, időpontot lehet foglalni és látod is a foglalásokat a foglalásaim oldalon
 
 **15. 3 Firestore lekérdezés** – 1: ReservationDoneActivity 58. sortól, 2: MainActivity 104. sortól, 3: ProfileActivity 135. sortól
+
+*Ha az értékelés közben bármi probléma adódna, valami hibába ütköztél vagy bármilyen kérdésed van, keress meg discordon: Kronus#2780*
