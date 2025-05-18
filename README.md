@@ -16,17 +16,17 @@
 
 **7. ConstraintLayout és még egy másik layout típus használata** – ConstraintLayout-ot, LinearLayout-ot, FrameLayout-ot is használok
 
-**8. Reszponzív** – Szerintem minden lapon tökéletesen elrendeztem mindent, ahol nem tudtam ott Scrollview-al oldottam meg
+**8. Reszponzív** – Szerintem minden oldalon tökéletesen elrendeztem mindent, ahol nem tudtam ott Scrollview-al oldottam meg
 
 **9. Legalább 2 animáció** – Mindkettő a főoldalon van (animation_one és -_two, a HomePageActivity 106-112. sorában vannak implementálva)
 
-**10. Intentek használata** – minden oldalt el lehet érni, egyszerű a navigáció
+**10. Intentek használata** – minden oldalt el lehet érni, megvan valósítva a navigáció pl (TableChoosingActivity 75-84 sorig)
 
 **11. lifecycle-hook** – MainActivityben 178. sortól
 
 **12.  2 erőforrás, amely permission-t igényel** – hangfelismerő a profilban (ProfileActivity 264. sortól)
 
-**13. 2 rendszerszerszolgáltatás** – Van Notification és alarm manager
+**13. 2 rendszerszerszolgáltatás** – Van Notification és alarm manager (NotificationHandler, AlarmReceiver)
 
 **14. CRUD műveletek**– a profilban lehet változtatni a felhasználóneve, lehet törölni a fiókot, időpontot lehet foglalni és látod is a foglalásokat a foglalásaim oldalon
 
