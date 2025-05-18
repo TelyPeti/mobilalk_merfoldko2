@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/light_green"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/registrationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:background="@color/dark_green"
+        android:textColor="@color/white"
+        android:text="@string/register"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/UserNameEditText"
+        android:layout_width="@dimen/long_edittext_width"
+        android:layout_height="@dimen/register_land_height"
+        android:layout_marginTop="@dimen/regist_land_edittext_distance"
+        android:autofillHints="name"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/registrationTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/EmailEditText"
+        android:layout_width="@dimen/long_edittext_width"
+        android:layout_height="@dimen/register_land_height"
+        android:layout_marginTop="@dimen/regist_land_edittext_distance"
+        android:autofillHints="emailAddress"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/UserNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/PhoneNumberEditText"
+        android:layout_width="@dimen/long_edittext_width"
+        android:layout_height="@dimen/register_land_height"
+        android:layout_marginTop="@dimen/regist_land_edittext_distance"
+        android:autofillHints="phoneNumber"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/EmailEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/PasswordEditText"
+        android:layout_width="@dimen/long_edittext_width"
+        android:layout_height="@dimen/register_land_height"
+        android:layout_marginTop="@dimen/regist_land_edittext_distance"
+        android:autofillHints="password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumberEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/PasswordAgainEditText"
+        android:layout_width="@dimen/long_edittext_width"
+        android:layout_height="@dimen/register_land_height"
+        android:layout_marginTop="@dimen/regist_land_edittext_distance"
+        android:autofillHints="password"
+        android:hint="@string/password_again"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordAgainEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:text="@string/cancel"
+            android:onClick="cancel"/>
+
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_green"
+            android:text="@string/register"
+            android:onClick="registration"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

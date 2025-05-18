@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/BilliardClubNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_green"
+        android:textColor="@color/white"
+        android:text="@string/billiard_club_name"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:typeface="sans"
+        />
+
+    <TextView
+        android:id="@+id/BejelentkezesEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="@dimen/login_edittext_distance"
+        android:textSize="35sp"
+        android:text="@string/login_text"
+        android:textAlignment="center"
+        android:textAppearance="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/BilliardClubNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/EmailEditText"
+        android:layout_width="@dimen/long_edittext_width"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_marginTop="@dimen/login_edittext_distance"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/BejelentkezesEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+         />
+
+    <EditText
+        android:id="@+id/PasswordEditText"
+        android:layout_width="@dimen/long_edittext_width"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_marginTop="@dimen/login_edittext_distance"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/EmailEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/login_edittext_distance"
+        android:onClick="login"
+        android:text="@string/login"
+        android:backgroundTint="@color/dark_green"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        />
+
+    <Button
+        android:id="@+id/loginWithGoogleButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/login_edittext_distance"
+        android:backgroundTint="@color/dark_green"
+        android:onClick="loginWithGoogle"
+        android:text="@string/login_with_google"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        />
+
+    <Button
+        android:id="@+id/regiszterButton"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/login_edittext_distance"
+        android:backgroundTint="@color/dark_green"
+        android:onClick="regist"
+        android:text="@string/register"
+        app:layout_constraintTop_toBottomOf="@+id/loginWithGoogleButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+         />
+
+    <FrameLayout
+        android:id="@+id/BottomLine"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/dark_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

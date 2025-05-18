@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        tools:context=".TableChoosingActivity">
+
+        <TextView
+            android:id="@+id/registrationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reservation"
+            android:background="@color/dark_green"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/ChooseTableEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/login_edittext_distance"
+            android:textSize="40sp"
+            android:text="@string/choose_table"
+            android:textAlignment="center"
+            android:textAppearance="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/registrationTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/Terem"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/textview_border"
+            app:layout_constraintTop_toBottomOf="@+id/ChooseTableEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/tables"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/ChooseTableEditText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/table1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/table_number_1"
+                    android:onClick="table_choosing"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="@color/dark_green"/>
+
+                <Button
+                    android:id="@+id/table3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/dark_green"
+                    android:text="@string/table_number_3"
+                    android:onClick="table_choosing"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/table5"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/dark_green"
+                    android:text="@string/table_number_5"
+                    android:onClick="table_choosing"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/table7"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/dark_green"
+                    android:text="@string/table_number_7"
+                    android:onClick="table_choosing"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/table2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/dark_green"
+                    android:text="@string/table_number_2"
+                    android:onClick="table_choosing"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/table4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/dark_green"
+                    android:text="@string/table_number_4"
+                    android:onClick="table_choosing"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/table6"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/dark_green"
+                    android:text="@string/table_number_6"
+                    android:onClick="table_choosing"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/table8"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/dark_green"
+                    android:text="@string/table_number_8"
+                    android:onClick="table_choosing"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/red"
+            android:onClick="cancel"
+            android:text="@string/cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

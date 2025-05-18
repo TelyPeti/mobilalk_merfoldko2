@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Billiard időpontfoglaló app</string>
+    <string name="name">Név</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="password_again">Jelszó megerősítése</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="register">Regisztráció</string>
+    <string name="email_address">E-mail cím</string>
+    <string name="cancel">Vissza</string>
+    <string name="phone_number">Telefonszám</string>
+    <string name="login_with_google">Bejelentkezés Google fiókkal</string>
+    <string name="welcome_text">Heló szia Valencia</string>
+    <string name="billiard_club_name">Tély\'s Billiard Club</string>
+    <string name="login_text">Bejelentkezés</string>
+    <string name="text_for_register">Ha még nincs fiókja regisztráljon itt</string>
+    <string name="logout">Kijelentkezés</string>
+    <string name="profile_text">Profilom</string>
+    <string name="modify_profile">Adatok módosítása</string>
+    <string name="delete_profile">Fiók törlése</string>
+    <string name="reservation">Időpontfoglalás</string>
+    <string name="choose_table">Válassz asztalt!</string>
+    <string name="table_number_1">1</string>
+    <string name="table_number_2">2</string>
+    <string name="table_number_3">3</string>
+    <string name="table_number_4">4</string>
+    <string name="table_number_5">5</string>
+    <string name="table_number_6">6</string>
+    <string name="table_number_7">7</string>
+    <string name="table_number_8">8</string>
+    <string name="reservation_text">Foglalás</string>
+    <string name="table_number_text">Asztalszám:</string>
+    <string name="table_number_main">1</string>
+    <string name="choose_time_text">Válassz időpontot:</string>
+    <string name="reservations">Foglalásaim</string>
+    <string name="home_text">Foglalj időpontot! Billiárdozz nálunk!</string>
+    <string name="homapage">Főoldal</string>
+    <string name="voice">Hang felvétele</string>
+
+    <string-array name="available_dates">
+        <item>14:00–15:00</item>
+        <item>15:00–16:00</item>
+        <item>16:00–17:00</item>
+        <item>17:00–18:00</item>
+        <item>18:00–19:00</item>
+        <item>19:00–20:00</item>
+        <item>20:00–21:00</item>
+        <item>21:00–22:00</item>
+        <item>22:00–23:00</item>
+        <item>23:00–0:00</item>
+        <item>0:00–1:00</item>
+        <item>1:00–2:00</item>
+    </string-array>
+
+    <string-array name="table_numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+</resources>

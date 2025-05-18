@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_margin">15dp</dimen>
+    <dimen name="regist_margin">25dp</dimen>
+    <dimen name="edittext_height">45dp</dimen>
+    <dimen name="login_edittext_distance">20dp</dimen>
+    <dimen name="long_edittext_width">330dp</dimen>
+    <dimen name="register_land_height">40dp</dimen>
+    <dimen name="regist_land_edittext_distance">5dp</dimen>
+    <dimen name="button_width">190dp</dimen>
+</resources>

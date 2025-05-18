@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1023644606536",
+    "project_id": "billiardidopontfoglalo",
+    "storage_bucket": "billiardidopontfoglalo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023644606536:android:7e1c62e1b96460ba58b87d",
+        "android_client_info": {
+          "package_name": "com.example.billiard_idopontfoglalo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023644606536-9nm2iorgsii9ht4rmksc55ivavrd75dg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.billiard_idopontfoglalo_app",
+            "certificate_hash": "28b59ae16a50ff26ed9c262d44961e4d3326c3b1"
+          }
+        },
+        {
+          "client_id": "1023644606536-d8vjkje72ia4e6b4me3fdumjt6vjckgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc9qWU_T3TzFwGvDnZST03N9siGOxRbPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023644606536-d8vjkje72ia4e6b4me3fdumjt6vjckgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
