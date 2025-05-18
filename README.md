@@ -24,7 +24,7 @@
 
 **11. lifecycle-hook** – MainActivityben 178. sortól
 
-**12.  2 erőforrás, amely permission-t igényel** – 
+**12.  2 erőforrás, amely permission-t igényel** – hangfelismerő a profilban (ProfileActivity 264. sortól)
 
 **13. 2 rendszerszerszolgáltatás** – Van Notification és alarm manager
 
