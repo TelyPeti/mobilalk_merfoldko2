@@ -1,4 +1,4 @@
-# mobilalk_merfoldko2
+# Mobil Alkalmazásfejlesztés – 2025
 
 *Kis segítség a javításhoz*
 
@@ -24,7 +24,7 @@
 
 **11. lifecycle-hook** – MainActivityben 178. sortól
 
-**12.  2 erőforrás, amely permission-t igényel** –
+**12.  2 erőforrás, amely permission-t igényel** – 
 
 **13. 2 rendszerszerszolgáltatás** – Van Notification és alarm manager
 
