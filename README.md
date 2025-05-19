@@ -1,6 +1,7 @@
 # Mobil Alkalmazásfejlesztés – 2025
 
 *Kis segítség a javításhoz*
+
 *Ha az értékelés közben bármi probléma adódna, valami hibába ütköztél vagy bármilyen kérdésed van, keress meg discordon: Kronus#2780*
 
 **1. Fordítási hiba** – Nincs
