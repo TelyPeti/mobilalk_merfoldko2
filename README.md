@@ -18,13 +18,13 @@
 
 **8. Reszponzív** – Szerintem minden oldalon tökéletesen elrendeztem mindent, ahol nem tudtam ott Scrollview-al oldottam meg
 
-**9. Legalább 2 animáció** – Mindkettő a főoldalon van (animation_one és -_two, a HomePageActivity 106-112. sorában vannak implementálva)
+**9. Legalább 2 animáció** – Mindkettő a főoldalon van (animation_one és -_two, a HomePageActivity 106-112 sorában vannak implementálva)
 
-**10. Intentek használata** – minden oldalt el lehet érni, megvan valósítva a navigáció pl (TableChoosingActivity 75-84 sorig)
+**10. Intentek használata** – minden oldalt el lehet érni, megvan valósítva a navigáció pl (TableChoosingActivity 75-84 sor)
 
 **11. lifecycle-hook** – MainActivityben 178. sortól
 
-**12.  2 erőforrás, amely permission-t igényel** – hangfelismerő a profilban (ProfileActivity 264. sortól)
+**12.  2 erőforrás, amely permission-t igényel** – hangfelismerő a profilban (ProfileActivity 264. sortól), üzenet permission a homepagen (HomePageActivity 92-113 sor)
 
 **13. 2 rendszerszerszolgáltatás** – Van Notification és alarm manager (NotificationHandler, AlarmReceiver)
 
