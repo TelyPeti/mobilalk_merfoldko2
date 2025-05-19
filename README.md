@@ -30,6 +30,6 @@
 
 **13. 2 rendszerszerszolgáltatás** – Van Notification és alarm manager (NotificationHandler, AlarmReceiver)
 
-**14. CRUD műveletek**– a profilban lehet változtatni a felhasználóneve, lehet törölni a fiókot, időpontot lehet foglalni és látod is a foglalásokat a foglalásaim oldalon
+**14. CRUD műveletek**– a profilban meglehet változtatni a felhasználónevet és a telefonszámot, lehet törölni a fiókot, időpontot lehet foglalni és látod is a foglalásokat a foglalásaim oldalon
 
 **15. 3 Firestore lekérdezés** – 1: ReservationDoneActivity 58. sortól, 2: MainActivity 104. sortól, 3: ProfileActivity 135. sortól
