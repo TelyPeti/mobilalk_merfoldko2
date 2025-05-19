@@ -17,7 +17,7 @@
         android:textColor="@color/white"
         android:text="@string/billiard_club_name"
         android:textAlignment="center"
-        android:textSize="50sp"
+        android:textSize="55sp"
         android:typeface="sans"
         />
 

@@ -42,6 +42,8 @@ public class ReservationMakeActivity extends AppCompatActivity {
     private static final int KEY = 99;
     private Spinner dateSp;
     private String selectedDate = "";
+    private NotificationHandler notificationHandler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,6 +92,8 @@ public class ReservationMakeActivity extends AppCompatActivity {
             }
         });
 
+        notificationHandler = new NotificationHandler(this);
+
     }
 
     public void make_reservation(View view) {
@@ -128,6 +132,9 @@ public class ReservationMakeActivity extends AppCompatActivity {
                                         Toast.makeText(ReservationMakeActivity.this,
                                                 "Sikeres foglalás!",
                                                 Toast.LENGTH_SHORT).show();
+                                        if (notificationHandler != null) {
+                                            notificationHandler.sendTicket("Sikeresen rögzítettük a foglalásod, sok szeretettel várunk a termünkben!");
+                                        }
                                         Intent intent = new Intent(ReservationMakeActivity.this, HomePageActivity.class);
                                         intent.putExtra("KEY", KEY);
                                         startActivity(intent);

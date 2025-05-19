@@ -9,6 +9,6 @@ public class AlarmReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         new com.example.billiard_idopontfoglalo_app.NotificationHandler(context)
-                .send("Billiárdozz nálunk! Foglalj egyszerűen az alkalmazáson keresztül!");
+                .send("Biliárdozz nálunk! Foglalj egyszerűen az alkalmazáson keresztül!");
     }
 }

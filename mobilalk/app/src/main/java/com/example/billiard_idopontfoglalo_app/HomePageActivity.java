@@ -4,6 +4,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.text.TextUtils;
@@ -45,6 +46,8 @@ public class HomePageActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     Button reserveButton;
     TextView welcomeTextView;
+    private static final int NOTIFICATION_PERMISSION_CODE = 100;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +76,8 @@ public class HomePageActivity extends AppCompatActivity {
         reserveButton = findViewById(R.id.reserveButton);
         welcomeTextView = findViewById(R.id.WelcomeTextView);
 
+        checkAndRequestNotificationPermission();
+
         mAlarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
         setAlarmManager();
@@ -82,6 +87,29 @@ public class HomePageActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("SECRET_KEY", SECRET_KEY);
         startActivity(intent);
+    }
+
+    private void checkAndRequestNotificationPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+                    != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.POST_NOTIFICATIONS},
+                        NOTIFICATION_PERMISSION_CODE);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == NOTIFICATION_PERMISSION_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, "Köszönjük, hogy engedélyezte az értesítéseket!", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "Az értesítések nélkülözhetik a fontos információkat", Toast.LENGTH_LONG).show();
+            }
+        }
     }
 
     @Override
@@ -131,7 +159,7 @@ public class HomePageActivity extends AppCompatActivity {
     }
 
     private void setAlarmManager() {
-        long repeatInterval = 30000;
+        long repeatInterval = 300000;
         long triggerTime = SystemClock.elapsedRealtime() + repeatInterval;
 
         Intent intent = new Intent(this, AlarmReceiver.class);

@@ -34,7 +34,6 @@
             android:layout_width="126dp"
             android:layout_height="50dp"
             android:layout_marginEnd="6dp"
-
             android:onClick="check_reservations"
             android:text="@string/reservations"
             android:backgroundTint="@color/dark_green" />
@@ -94,12 +93,13 @@
         android:layout_marginTop="136dp"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/reserveButton"
-        app:srcCompat="@drawable/homepage_pic" />
+        android:background="@drawable/image_border"
+    android:padding="5dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.491"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/reserveButton"
+    app:srcCompat="@drawable/homepage_pic" />
 
     <FrameLayout
         android:id="@+id/BottomLine"

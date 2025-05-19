@@ -247,11 +247,6 @@ public class ProfileActivity extends AppCompatActivity {
                         editor.apply();
 
                         Toast.makeText(ProfileActivity.this, "Sikeres módosítás!", Toast.LENGTH_SHORT).show();
-
-                        if (mNotificationHandler != null) {
-                            mNotificationHandler.send("Sikeresen módosítottad az adataid! Új felhasználóneved: " +
-                                    newName + ", új telefonszámod: " + newPhone);
-                        }
                     } else {
                         Log.e(LOG_TAG, "Sikertelen módosítás: " + documentId, task.getException());
                         Toast.makeText(ProfileActivity.this, "Sikertelen módosítás: " +

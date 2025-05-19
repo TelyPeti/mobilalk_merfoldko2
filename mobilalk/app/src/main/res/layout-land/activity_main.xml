@@ -19,7 +19,7 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHighlight="@color/dark_green"
-        android:textSize="35sp"
+        android:textSize="55sp"
         android:typeface="sans" />
 
     <TextView

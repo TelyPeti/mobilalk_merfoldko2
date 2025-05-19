@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Billiard időpontfoglaló app</string>
+    <string name="app_name">Biliard időpontfoglaló app</string>
     <string name="name">Név</string>
     <string name="username">Felhasználónév</string>
     <string name="password">Jelszó</string>
@@ -11,7 +11,7 @@
     <string name="phone_number">Telefonszám</string>
     <string name="login_with_google">Bejelentkezés Google fiókkal</string>
     <string name="welcome_text">Heló szia Valencia</string>
-    <string name="billiard_club_name">Tély\'s Billiard Club</string>
+    <string name="billiard_club_name">Tély\'s Biliard Club</string>
     <string name="login_text">Bejelentkezés</string>
     <string name="text_for_register">Ha még nincs fiókja regisztráljon itt</string>
     <string name="logout">Kijelentkezés</string>
@@ -33,7 +33,7 @@
     <string name="table_number_main">1</string>
     <string name="choose_time_text">Válassz időpontot:</string>
     <string name="reservations">Foglalásaim</string>
-    <string name="home_text">Foglalj időpontot! Billiárdozz nálunk!</string>
+    <string name="home_text">Foglalj időpontot! Biliárdozz nálunk!</string>
     <string name="homapage">Főoldal</string>
     <string name="voice">Hang felvétele</string>
 
